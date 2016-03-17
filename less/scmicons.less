@@ -1,0 +1,28 @@
+@scmicons-font-path: '../fonts';
+@scmicons-font-size-base: 14px;
+@scmicons-line-height-base: 1;
+@scmicons-css-prefix: si;
+@scmicons-version: "1.0.0";
+
+@font-face {
+	font-family: 'scmicons';
+	src: url('@{scmicons-font-path}/scmicons.eot?v=@{scmicons-version}');
+	src: url('@{scmicons-font-path}/scmicons.eot?#iefix&v=@{scmicons-version}') format('embedded-opentype'),
+		url('@{scmicons-font-path}/scmicons.woff?v=@{scmicons-version}') format('woff'),
+		url('@{scmicons-font-path}/scmicons.ttf?v=@{scmicons-version}') format('truetype'),
+		url('@{scmicons-font-path}/scmicons.svg?v=@{scmicons-version}#scmicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.@{scmicons-css-prefix} {
+	display: inline-block;
+	font: normal normal normal @scmicons-font-size-base/@scmicons-line-height-base scmicons;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&-git:before { content: '\f000'; }
+	&-hg:before { content: '\f001'; }
+}

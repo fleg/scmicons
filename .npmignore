@@ -1,0 +1,4 @@
+.npmignore
+src/
+example.html
+screenshot.png

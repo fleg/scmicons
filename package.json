@@ -1,0 +1,32 @@
+{
+  "name": "scmicons",
+  "version": "1.0.0",
+  "description": "scm icons pack",
+  "author": "Aleksey Timchenko <flegmatik.bel@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fleg/scmicons.git"
+  },
+  "scripts": {
+    "build": "npm run build-svg && npm run build-ttf && npm run build-eot && npm run build-woff && npm run build-less",
+    "build-svg": "svgicons2svgfont -v -f -o fonts/scmicons.svg src/uf000-git.svg src/uf001-hg.svg",
+    "build-ttf": "svg2ttf fonts/scmicons.svg fonts/scmicons.ttf",
+    "build-eot": "ttf2eot fonts/scmicons.ttf fonts/scmicons.eot",
+    "build-woff": "ttf2woff fonts/scmicons.ttf fonts/scmicons.woff",
+    "build-less": "lessc less/scmicons.less css/scmicons.css"
+  },
+  "keywords": [
+    "scm",
+    "icons",
+    "git",
+    "hg"
+  ],
+  "devDependencies": {
+    "less": "2.6.1",
+    "svg2ttf": "4.0.0",
+    "svgicons2svgfont": "5.0.0",
+    "ttf2eot": "2.0.0",
+    "ttf2woff": "2.0.1"
+  }
+}
