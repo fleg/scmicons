@@ -10,6 +10,7 @@
   font: normal normal normal 14px/1 scmicons;
   font-size: inherit;
   text-rendering: auto;
+  vertical-align: middle;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
