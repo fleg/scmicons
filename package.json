@@ -9,11 +9,12 @@
     "url": "git+https://github.com/fleg/scmicons.git"
   },
   "scripts": {
-    "build": "npm run build-svg && npm run build-ttf && npm run build-eot && npm run build-woff && npm run build-less",
-    "build-svg": "svgicons2svgfont -v -f -o fonts/scmicons.svg src/uf000-git.svg src/uf001-hg.svg",
+    "build": "npm run build-fonts && npm run build-less",
+    "build-svg": "svgicons2svgfont -v -f scmicons -d 30 -o fonts/scmicons.svg src/uf000-git.svg src/uf001-hg.svg",
     "build-ttf": "svg2ttf fonts/scmicons.svg fonts/scmicons.ttf",
     "build-eot": "ttf2eot fonts/scmicons.ttf fonts/scmicons.eot",
     "build-woff": "ttf2woff fonts/scmicons.ttf fonts/scmicons.woff",
+    "build-fonts": "npm run build-svg && npm run build-ttf && npm run build-eot && npm run build-woff",
     "build-less": "lessc less/scmicons.less css/scmicons.css"
   },
   "keywords": [
