@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'scmicons';
-  src: url('../fonts/scmicons.eot?v=1.0.0');
-  src: url('../fonts/scmicons.eot?#iefix&v=1.0.0') format('embedded-opentype'), url('../fonts/scmicons.woff?v=1.0.0') format('woff'), url('../fonts/scmicons.ttf?v=1.0.0') format('truetype'), url('../fonts/scmicons.svg?v=1.0.0#scmicons') format('svg');
+  src: url('../fonts/scmicons.eot?v=1.2.1');
+  src: url('../fonts/scmicons.eot?#iefix&v=1.2.1') format('embedded-opentype'), url('../fonts/scmicons.woff?v=1.2.1') format('woff'), url('../fonts/scmicons.ttf?v=1.2.1') format('truetype'), url('../fonts/scmicons.svg?v=1.2.1#scmicons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
